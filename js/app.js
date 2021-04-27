@@ -1,26 +1,80 @@
 alert("welcome to my page please answer these yes/no Q and Enjoy getting to know me");
- let Q1 = prompt("1.  Do you think that  the field that i studied is interesting ?");
- Q1.toUpperCase();
- //console.log('my studies are computer science'+Q1);
-alert ("iam intrest to your openion thx");
-  let Q2= prompt("2. my age is older than 22");
-  Q2.toUpperCase();
- // console.log(' iam 22'+Q2);
-alert("my age is 22 :)");
- let Q3 =prompt("3.Do you think that i had more than one hobbies in my childhood")
- Q3.toUpperCase();
-// console.log('i loved these talents at that time'+Q3);
-alert("i had many hobbies in my childhood");
- let Q4 = prompt("4.is my graduation project name emergency?");
- Q4.toUpperCase();
- //console.log('wewe the name of my project graduation'+Q4);
-alert("wewe the name of my project graduation and that is a funny name ");
-let Q5 = prompt("Did get a high score in her project");
-Q5.toUpperCase();
-//console.log('i worked very hard on my project '+Q5);
-alert("i am proud to receive a grade A");
+let Q1=prompt ('Is my name Erada abdalrhman?');
+switch(Q1.toUpperCase()){ 
+  case 'YES' :console.log ('yes , my name is Erada'); 
+  case 'Y':console.log ('yes ,my name is Erada'); 
+  alert('yes , my name is Erada now you know my name');
+  break;    
+  case'NO':console.log('no , it is not');  
+  case 'N':console.log ('no , no it is not'); 
+  alert ('no ,it is');  
+  break;    
+  default:    
+  console.log('plz ask me agin');    
+  alert('plz ask me agin');}
 
-alert("thanks four your intrest to know me now let me to know your name :) ");
- let nameU =prompt("what is yor name");
-alert(" nice name "+ nameU);
-alert("i realy thankful " +nameU +" good Buy ");
+  let Q2=prompt ('my age is older than 22');
+  switch(Q2.toUpperCase()){ 
+  case 'YES' :console.log ('yes , my age is 22'); 
+  case 'Y':console.log ('yes ,my age is 22'); 
+  alert('yes , my age is 22');
+  break;    
+  case'NO':console.log('no , it is not');  
+  case 'N':console.log ('no , no it is not'); 
+  alert ('no ,it is 22');  
+  break;    
+  default:    
+  console.log('plz ask me agin');    
+  alert('plz ask me agin');}
+ 
+//Q3
+let Q3=prompt ('Do you think that i had more than one hobbies in my childhood');
+switch(Q3.toUpperCase()){ 
+case 'YES' :console.log ('yes , am i'); 
+case 'Y':console.log ('yes ,am i'); 
+alert('yes , I am had more than one ');
+break;    
+case'NO':console.log('no , iam not');  
+case 'N':console.log ('no , iam not'); 
+alert ('no ,actully  I am had more hobbies in my childhood' );  
+break;    
+default:    
+console.log('plz ask me agin');    
+alert('plz ask me agin');}
+
+
+
+ let Q4=prompt ('is my graduation project name wewe?');
+switch(Q4.toUpperCase()){ 
+case 'YES' :console.log ('yes , it is'); 
+case 'Y':console.log ('yes ,it is'); 
+alert('yes , my project name is wewe ');
+break;    
+case'NO':console.log('no , it is not');  
+case 'N':console.log ('no ,it is not'); 
+alert ('no ,actully my project name is wewe' );  
+break;    
+default:    
+console.log('plz ask me agin');    
+alert('plz ask me agin');}
+
+//Q5
+let Q5=prompt ('Did get a high score in her project?');
+switch(Q5.toUpperCase()){ 
+case 'YES' :console.log ('yes , i do'); 
+case 'Y':console.log ('yes ,i do'); 
+alert('yes ,i got A ');
+break;    
+case'NO':console.log('no , i dont');  
+case 'N':console.log ('no ,i dont'); 
+alert ('no ,i got A' );  
+break;    
+default:    
+console.log('plz ask me agin');    
+alert('plz ask me agin');}
+
+
+
+
+
+
