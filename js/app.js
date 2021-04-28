@@ -1,5 +1,10 @@
+
 let score =0;
-alert("welcome to my page please answer these yes/no Q and Enjoy getting to know me");
+
+
+
+ function fun1() {
+  alert("welcome to my page please answer these yes/no Q and Enjoy getting to know me");
 let Q1 = prompt('Is my name Erada abdalrhman?');
 switch (Q1.toUpperCase()) {
   case 'YES': console.log('yes , my name is Erada');
@@ -17,7 +22,11 @@ switch (Q1.toUpperCase()) {
     alert('plz ask me agin');
 }
 
-let Q2 = prompt('my age is older than 22');
+} 
+fun1();
+
+ function fun2() {
+  let Q2 = prompt('my age is older than 22');
 switch (Q2.toUpperCase()) {
   case 'YES': console.log('yes , my age is 22');
   case 'Y': console.log('yes ,my age is 22');
@@ -33,9 +42,10 @@ switch (Q2.toUpperCase()) {
     console.log('plz ask me agin');
     alert('plz ask me agin');
 }
-
-//Q3
-let Q3 = prompt('Do you think that i had more than one hobbies in my childhood');
+}
+fun2();
+ function fun3() {
+  let Q3 = prompt('Do you think that i had more than one hobbies in my childhood');
 switch (Q3.toUpperCase()) {
   case 'YES': console.log('yes , am i');
   case 'Y': console.log('yes ,am i');
@@ -52,9 +62,11 @@ switch (Q3.toUpperCase()) {
     alert('plz ask me agin');
 }
 
-
-
-let Q4 = prompt('is my graduation project name wewe?');
+  
+}
+fun3();
+function fun4() {
+  let Q4 = prompt('is my graduation project name wewe?');
 switch (Q4.toUpperCase()) {
   case 'YES': console.log('yes , it is');
   case 'Y': console.log('yes ,it is');
@@ -70,8 +82,10 @@ switch (Q4.toUpperCase()) {
     console.log('plz ask me agin');
     alert('plz ask me agin');
 }
-
-//Q5
+}
+fun4();
+ function fun5() {
+  //Q5
 let Q5 = prompt('Did get a high score in her project?');
 switch (Q5.toUpperCase()) {
   case 'YES': console.log('yes , i do');
@@ -88,41 +102,44 @@ switch (Q5.toUpperCase()) {
     console.log('plz ask me agin');
     alert('plz ask me agin');
 }
-//let score =0;
 
-const startTheQuestion = function (correctAnswer,questionText) {
-  for (let i = 1; i < 5; i++) {
-    let Q6 = parseInt(prompt(questionText));
-    if (Q6 == correctAnswer) {
-      alert("The answer is correct!")
-      return true;
-    } else {
-      if (Q6 < correctAnswer) {
-        alert("the number is more than")
+}
+fun5();
 
-      } else if (Q6 > correctAnswer) {
-        alert("the number is less than")
-
+function fun6(){
+  const startTheQuestion = function (correctAnswer,questionText) {
+    for (let i = 1; i < 5; i++) {
+      let Q6 = parseInt(prompt(questionText));
+      if (Q6 == correctAnswer) {
+        alert("The answer is correct!")
+        return true;
+      } else {
+        if (Q6 < correctAnswer) {
+          alert("the number is more than")
+  
+        } else if (Q6 > correctAnswer) {
+          alert("the number is less than")
+  
+        }
+        score--;
       }
-      score--;
     }
+    alert("Try a gain")
+    return false;
+  
   }
-  alert("Try a gain")
-  return false;
-
-}
-
-const myArray=[{answer:4,questionText:"How many programming languages ​​have I tried to learn"},{answer:2,questionText:"Ranking a movie Small Axe: Lovers Rock in the Top Ten list is"}
-];
-
-for(i=0;i<myArray.length;i++){
-
-  const isCorrect = startTheQuestion(myArray[i].answer,myArray[i].questionText);
-  if(isCorrect){
-    score++;
+  
+  const myArray=[{answer:4,questionText:"How many programming languages ​​have I tried to learn"},{answer:2,questionText:"Ranking a movie Small Axe: Lovers Rock in the Top Ten list is"}
+  ];
+  
+  for(i=0;i<myArray.length;i++){
+  
+    const isCorrect = startTheQuestion(myArray[i].answer,myArray[i].questionText);
+    if(isCorrect){
+      score++;
+    }
+  
   }
-
-}
-
-
-alert ("Your score is "+score)
+  }
+  fun6();
+  alert ("Your score is "+score)
