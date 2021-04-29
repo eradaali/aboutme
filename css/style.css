@@ -1,11 +1,32 @@
+
 #me{
-    color: rgb(154, 197, 34);
-    background-color: rgb(89, 13, 160);
+    color: aliceblue;
+    background-color: rgb(190, 170, 209);
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    border: 2px solid white;
     }
     
     body{
-        background-color: rgb(190, 27, 103);
+        background-color: rgb(221, 90, 151);
     }
     footer{
         text-align: center;
     }
+    main h3{
+        background-color: rgb(190, 170, 209);
+        
+        text-align: center;
+    }
+
+    main ol li{
+        text-align: center;
+        list-style-position: inside;
+    }
+
+    
+    main ul li{
+        text-align: center;
+        list-style-position: inside;
+    }
+  

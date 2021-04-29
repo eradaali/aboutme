@@ -1,4 +1,5 @@
 
+'use strict';
 let score =0;
 
 
@@ -7,18 +8,18 @@ let score =0;
   alert("welcome to my page please answer these yes/no Q and Enjoy getting to know me");
 let Q1 = prompt('Is my name Erada abdalrhman?');
 switch (Q1.toUpperCase()) {
-  case 'YES': console.log('yes , my name is Erada');
-  case 'Y': console.log('yes ,my name is Erada');
-  score++;
+  case 'YES':
     alert('yes , my name is Erada now you know my name');
+  score++;
+
     break;
-  case 'NO': console.log('no , it is not');
-  case 'N': console.log('no , no it is not');
-  score--;
+  case 'NO':
     alert('no ,it is');
+  score--;
+    
     break;
   default:
-    console.log('plz ask me agin');
+    
     alert('plz ask me agin');
 }
 
@@ -28,18 +29,18 @@ fun1();
  function fun2() {
   let Q2 = prompt('my age is older than 22');
 switch (Q2.toUpperCase()) {
-  case 'YES': console.log('yes , my age is 22');
-  case 'Y': console.log('yes ,my age is 22');
+  case 'YES': 
+  alert('yes , my age is 22');
   score++
-    alert('yes , my age is 22');
+    
     break;
-  case 'NO': console.log('no , it is not');
-  case 'N': console.log('no , no it is not');
+  case 'NO': 
+  alert('no ,it is 22');
   score--;
-    alert('no ,it is 22');
+   
     break;
   default:
-    console.log('plz ask me agin');
+    
     alert('plz ask me agin');
 }
 }
@@ -47,18 +48,18 @@ fun2();
  function fun3() {
   let Q3 = prompt('Do you think that i had more than one hobbies in my childhood');
 switch (Q3.toUpperCase()) {
-  case 'YES': console.log('yes , am i');
-  case 'Y': console.log('yes ,am i');
-  score++;
+  case 'YES':
     alert('yes , I am had more than one ');
+  score++;
+    
     break;
-  case 'NO': console.log('no , iam not');
-  case 'N': console.log('no , iam not');
+  case 'NO': 
+  alert('no ,actully  I am had more hobbies in my childhood');
   score--;
-    alert('no ,actully  I am had more hobbies in my childhood');
+    
     break;
   default:
-    console.log('plz ask me agin');
+    
     alert('plz ask me agin');
 }
 
@@ -68,18 +69,17 @@ fun3();
 function fun4() {
   let Q4 = prompt('is my graduation project name wewe?');
 switch (Q4.toUpperCase()) {
-  case 'YES': console.log('yes , it is');
-  case 'Y': console.log('yes ,it is');
-  score++;
+  case 'YES':
     alert('yes , my project name is wewe ');
+  score++;
+    
     break;
-  case 'NO': console.log('no , it is not');
-  case 'N': console.log('no ,it is not');
+  case 'NO': 
+  alert('no ,actully my project name is wewe');
   score--;
-    alert('no ,actully my project name is wewe');
+    
     break;
   default:
-    console.log('plz ask me agin');
     alert('plz ask me agin');
 }
 }
@@ -88,18 +88,18 @@ fun4();
   //Q5
 let Q5 = prompt('Did get a high score in her project?');
 switch (Q5.toUpperCase()) {
-  case 'YES': console.log('yes , i do');
-  case 'Y': console.log('yes ,i do');
-  score++;
+  case 'YES':
     alert('yes ,i got A ');
+  score++;
+    
     break;
-  case 'NO': console.log('no , i dont');
-  case 'N': console.log('no ,i dont');
+  case 'NO': 
+  alert('no ,i got A');
   score--;
-    alert('no ,i got A');
+  
     break;
   default:
-    console.log('plz ask me agin');
+    
     alert('plz ask me agin');
 }
 
