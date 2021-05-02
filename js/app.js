@@ -191,3 +191,5 @@ for (let i = 0; i < myArray.length; i++) {
 }
 
 alert("Your score is " + score)
+
+// this is update from pair person
