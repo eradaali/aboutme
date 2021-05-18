@@ -2,6 +2,7 @@
 'use strict';
 let score = 0;
 let answers=[];
+let answer2=[];
 
 alert("welcome to my page please answer these yes/y/no/n Q and Enjoy getting to know me");
 function fun1() {
@@ -154,6 +155,39 @@ for (let i = 0; i < 6; i++) {
 
 
 }
+function fun9() {
+  //Q5
+  let Q9 = prompt('what is my faviourt color(RED/PINK/YELLOW');
+  switch (Q9.toUpperCase()) {
+    case 'RED':
+    case 'red': 
+      alert('yes ,it is');
+      answers.push(Q9);
+      score++;
+
+      return true;
+    case 'PINK':
+    case 'YELLOW':   
+      alert('no ,it is not');
+      score--;
+
+      return false;
+    default:
+
+      alert('plz ask me agin');
+  }
+
+}
+for (let i = 0; i < 6; i++) {
+
+  if (fun9()) {
+    break;
+  };
+
+
+}
+
+
 
 
 const startTheQuestion = function (correctAnswer, questionText) {
@@ -178,7 +212,7 @@ const startTheQuestion = function (correctAnswer, questionText) {
 
 }
 
-const myArray = [{ answer: 4, questionText: "How many programming languages ​​have I tried to learn" }, { answer: 2, questionText: "Ranking a movie Small Axe: Lovers Rock in the Top Ten list is" }
+const myArray = [{ answer: 4, questionText: "How many programming languages ​​have I tried to learn" }, { answer: 2, questionText: "Ranking a movie Small Axe: Lovers Rock in the Top Ten list is" }, { answer: 8, questionText: "what is my favouirt number (5/8/12)" }
 ];
 
 for (let i = 0; i < myArray.length; i++) {
